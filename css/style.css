@@ -286,3 +286,20 @@ input[type=file] {
     padding: 1.5em;
     margin: 0 auto;
 }
+
+/* dashboard */
+#user_table {
+    width: 100%;
+}
+
+#user_table tr th,
+#user_table tr td {
+    padding: 10px;
+    border: 1px solid #DDD;
+    vertical-align: middle;
+}
+
+#user_table tr th {
+    text-align: center;
+    font-weight: bold;
+}
