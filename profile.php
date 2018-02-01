@@ -101,12 +101,14 @@ function h($str) {
         <div><font color="#ff0000"><?= h($errorMessage); ?></font></div>
         <div><font color="#0000ff"><?= h($signupMessage); ?></font></div>
         <div><font color="#0000ff"><?= h($Message); ?></font></div>
-        <label for="username">ユーザー名</label><input type="text" id="username" name="username" placeholder="ユーザー名を入力" value="<?= h($username) ?>">
-        <br>
-        <label for="avatar">アバター画像を選択</label><input type="file" id="avatar" name="avatar">
-        <br>
+        <p>
+            <label for="username">ユーザー名</label><input type="text" id="username" name="username" placeholder="ユーザー名を入力" value="<?= h($username) ?>">
+        </p>
+        <p>
+            <label for="avatar">アバター画像を選択</label><input type="file" id="avatar" name="avatar">
+        </p>
         <input type="hidden" name="id" value="<?= h($user["id"])?>">
-        <input type="submit" id="signUp" name="signUp" value="変更する">
+        <input type="submit" id="signUp" name="signUp" value="変更する" class="button">
     </fieldset>
 </form>
 

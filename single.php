@@ -38,7 +38,7 @@ function h($str) {
     <p><input type="hidden" name="bid" value="<?= h($book['bid'])?>"></p>
     <p><label>タイトル</label><input type="text" name="title" value="" placeholder="タイトルを入力してね" required></p>
     <p><label>コメント</label><textarea name="comment" id="" cols="30" rows="10" placeholder="コメントを入力してね" required></textarea></p>
-    <p><input type="submit" value="コメントする"></p>
+    <p><input type="submit" value="コメントする" class="button"></p>
 </form>
 <div id="search_results"></div>
 

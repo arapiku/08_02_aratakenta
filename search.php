@@ -12,7 +12,7 @@ function h($str) {
     return htmlspecialchars($str, ENT_QUOTES, 'UTF-8');
 }
 ?>
-<h1>検索ページ</h1>
+<h1>書籍を検索する</h1>
 <form id="searchform" method="get">
 <div>
     <label for="search_term">入力してね</label>
