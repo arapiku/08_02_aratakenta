@@ -76,24 +76,28 @@ function h($str) {
 <h1>新規登録画面</h1>
 <form id="loginForm" name="loginForm" action="" method="POST" enctype="multipart/form-data">
     <fieldset>
-        <legend>新規登録フォーム</legend>
+        <legend>新規登録</legend>
         <div><font color="#ff0000"><?= h($errorMessage); ?></font></div>
         <div><font color="#0000ff"><?= h($signupMessage); ?></font></div>
         <div><font color="#0000ff"><?= h($Message); ?></font></div>
-        <label for="username">ユーザー名</label><input type="text" id="username" name="username" placeholder="ユーザー名を入力" value="<?php if (!empty($_POST["username"])) {echo h($_POST["username"]);} ?>">
-        <br>
-        <label for="password1">パスワード</label><input type="password" id="password1" name="password1" value="" placeholder="パスワードを入力">
-        <br>
-        <label for="password2">パスワード(確認用)</label><input type="password" id="password2" name="password2" value="" placeholder="再度パスワードを入力">
-        <br>
-        <label for="password2">アバター画像を選択</label><input type="file" id="avatar" name="avatar">
-        <br>
-        <input type="submit" id="signUp" name="signUp" value="新規登録">
+        <p>
+            <label for="username">ユーザー名</label><input type="text" id="username" name="username" placeholder="ユーザー名を入力" value="<?php if (!empty($_POST["username"])) {echo h($_POST["username"]);} ?>">
+        </p>
+        <p>
+            <label for="password1">パスワード</label><input type="password" id="password1" name="password1" value="" placeholder="パスワードを入力">
+        </p>
+        <p>
+            <label for="password2">パスワード(確認用)</label><input type="password" id="password2" name="password2" value="" placeholder="再度パスワードを入力">
+        </p>
+        <p>
+            <label for="password2">アバター画像を選択</label><input type="file" id="avatar" name="avatar">
+        </p>
+        <input type="submit" id="signUp" name="signUp" value="新規登録" class="button">
     </fieldset>
 </form>
 <br>
 <form action="login.php">
-    <input type="submit" value="戻る">
+    <input type="submit" value="TOPへ戻る" class="button">
 </form>
 
 <?php include_once "templates/footer.php"; ?> 
